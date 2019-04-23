@@ -13,7 +13,7 @@ These tools are here to bridge the workflow gaps when trying to migrate slack em
 
 download / setup / install both these tools first, so that you can use this toolset.
 
-Note that slackporter has to have the extra changes from my fork to work right.
+Note that emojipacks has to have the extra changes from my fork to work right.
 
 ## Usage
 
@@ -48,7 +48,7 @@ so you've found a better pack, but some of the emoji names are already taken?
 
 First, run `reparser.py foo True` which will create `out/re-foo.yaml` as a list of only the emojis that didn't get uploaded due to duplicate names.
 
-Next, run `emojipacks -s <slackID> -e <email> -p <pass> -y out/re-foo.yaml --remove |tee -a src/foo.log` to delete all those emoji from your slack channel.
+Next, run `emojipacks -s <slackID> -e <email> -p <pass> -y out/re-foo.yaml --remove |tee -a src/re-foo.log` to delete all those emoji from your slack channel.
 
 Last, run `emojipacks -s <slackID> -e <email> -p <pass> -y out/re-foo.yaml |tee -a src/foo.log` to re-upload all the emoji you just made room for.
 
