@@ -1,0 +1,10 @@
+# Logs
+logs
+*.log
+
+# ignore user files
+out/*.yaml
+src/*.html
+
+# OSX Garbage
+.DS_Store
